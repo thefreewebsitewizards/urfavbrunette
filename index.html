@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadence in the Clouds | Music Networking Event</title>
+    <meta name="description" content="Join us for Cadence in the Clouds - A premier music networking industry night bringing together creatives and professionals.">
+    <meta property="og:title" content="Cadence in the Clouds">
+    <meta property="og:description" content="A music networking industry night for creatives and professionals">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cadenceintheclouds.com">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;500;600&family=Rouge+Script&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body text-gray-800 bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-4xl font-script font-bold text-primary">Cadence in the Clouds<span class="text-accent"></span></a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-primary">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary">About</a>
+                    <a href="#vision" class="nav-link text-gray-700 hover:text-primary">Vision & Mission</a>
+                    <a href="#what-we-do" class="nav-link text-gray-700 hover:text-primary">What We Do</a>
+                    <a href="#event" class="nav-link text-gray-700 hover:text-primary">Event</a>
+                    <a href="#sponsors" class="nav-link text-gray-700 hover:text-primary">Sponsorship</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i data-feather="menu" class="text-gray-700"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden pt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-gray-700 hover:text-primary">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary">About</a>
+                    <a href="#vision" class="text-gray-700 hover:text-primary">Vision & Mission</a>
+                    <a href="#what-we-do" class="text-gray-700 hover:text-primary">What We Do</a>
+                    <a href="#event" class="text-gray-700 hover:text-primary">Event</a>
+                    <a href="#sponsors" class="text-gray-700 hover:text-primary">Sponsors</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Transparency -->
+        <div class="absolute inset-0 bg-[url('assets/hero.jpg')] bg-cover bg-center opacity-60"></div>
+        <div class="absolute inset-0 animated-gradient opacity-50"></div>
+        
+        <!-- Floating Clouds Background -->
+        <div id="home-background-wrap">
+            <div class="x1">
+                <div class="cloud"></div>
+            </div>
+            <div class="x2">
+                <div class="cloud"></div>
+            </div>
+            <div class="x3">
+                <div class="cloud"></div>
+            </div>
+            <div class="x4">
+                <div class="cloud"></div>
+            </div>
+            <div class="x5">
+                <div class="cloud"></div>
+            </div>
+            <!-- Additional clouds -->
+            <div class="x6">
+                <div class="cloud"></div>
+            </div>
+            <div class="x7">
+                <div class="cloud"></div>
+            </div>
+            <div class="x8">
+                <div class="cloud"></div>
+            </div>
+            <div class="x9">
+                <div class="cloud"></div>
+            </div>
+            <div class="x10">
+                <div class="cloud"></div>
+            </div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto" data-aos="fade-up">
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-script font-bold text-white mb-4 glow-text hover:scale-105 transition-transform duration-300 cursor-default">Cadence in the Clouds</h1>
+            <p class="text-xl md:text-2xl text-white mb-8 opacity-90">A MUSIC NETWORKING INDUSTRY NIGHT</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#about" class="px-8 py-3 btn-magical text-white rounded-full font-medium transition-all duration-300">Learn More</a>
+                <a href="#sponsors" class="px-8 py-3 btn-magical text-white rounded-full font-medium transition-all duration-300">Sponsor Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 relative flex items-center py-20">
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Mobile-First Layout -->
+            <div class="text-center mb-8 lg:hidden" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold gradient-text leading-tight">
+                    About Us
+                </h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <!-- Left Column: Image with Creative Layout -->
+                <div class="relative order-1 lg:order-1" data-aos="fade-right">
+                    <!-- Main Image Container -->
+                    <div class="relative group max-w-md mx-auto lg:max-w-none">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
+                        <div class="relative bg-white p-3 lg:p-4 rounded-2xl shadow-2xl">
+                            <img src="assets/about.png" alt="Cadence in the Clouds" class="w-full rounded-xl transform group-hover:scale-105 transition duration-500">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Content -->
+                <div class="space-y-6 lg:space-y-8 order-2 lg:order-2" data-aos="fade-left">
+                    <!-- Header - Hidden on mobile, shown on desktop -->
+                    <div class="space-y-4 hidden lg:block">
+                        <h2 class="text-4xl lg:text-5xl font-heading font-bold gradient-text leading-tight">
+                            About Us
+                        </h2>
+                    </div>
+                    
+                    <!-- Content Cards -->
+                    <div class="space-y-4 lg:space-y-6">
+                        <!-- Card 1 -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 lg:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+                            <p class="text-gray-700 text-sm lg:text-base leading-relaxed">
+                                Cadence in the Clouds is the live music extension of Spice on the Beat, a Philadelphia-based Hip-Hop blog. It is a developmental concert series that takes place three times a year and doesn't prioritize highlighting artists with the highest streaming numbers. Instead, it showcases artists who deserve more opportunities than they are currently receiving.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 lg:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+                            <p class="text-gray-700 text-sm lg:text-base leading-relaxed">
+                                The events occur in different locations on Mondays—popular industry nights in the city—while partnering with local Philadelphia-based businesses. This demonstrates to artists that they don't need to move to New York or Los Angeles to have a thriving career; they can build one here with the right resources.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 lg:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+                            <p class="text-gray-700 text-sm lg:text-base leading-relaxed">
+                                Cadence in the Clouds strives to bring those resources into one room, celebrating every individual who puts their passion at the forefront of their career and dares to take risks rather than follow the paths of conventionality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision" class="py-12 md:py-16 relative" style="background-color: #5e17eb;">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgxNDIsIDY4LCAyMzUsIDAuMSkiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=')]"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-6xl mx-auto text-center mb-8 md:mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4 glow-text">Our Vision & Mission</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto reveal-up">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm float-card card-shimmer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4 pulse-icon">
+                        <i data-feather="eye" class="text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-primary mb-4">Vision</h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed">While Cadence in the Clouds is predominantly a music concert, it is so much more than that. It creates a room that celebrates art, demonstrating the concept in all its varieties, from the visual to the culinary arts. It's also a show not necessarily just for music lovers but for the creatives who contribute to the artistic scenes we all enjoy, giving them a night out and an experience with resources, connections, and opportunities.</p>
+                </div>
+                
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm float-card card-shimmer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-4 pulse-icon">
+                        <i data-feather="target" class="text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-primary mb-4">Mission</h3>
+                    <div class="text-gray-600 text-sm md:text-base leading-relaxed space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-primary font-bold text-lg">01</span>
+                            </div>
+                            <p>To facilitate and encourage collaboration among Philadelphia artists and businesses to stimulate the local economy, create new opportunities, and showcase an artistic community that is often overlooked.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-primary font-bold text-lg">02</span>
+                            </div>
+                            <p>To create a concert with benefits for the artists, with tickets including resources such as artist biographies, music tech equipment, scheduled calls with marketing agencies, and other takeaways that are unconventional yet useful to one's career.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-primary font-bold text-lg">03</span>
+                            </div>
+                            <p>To highlight Hip-Hop, specifically, in an elevated manner in a city rich with roots in the culture. Philadelphia often gets forgotten in the origin story of Hip-Hop, and it's getting more lost as society shuns it. But it's impactful, and it's time to showcase it in a light that demonstrates its artistry and importance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="what-we-do" class="py-20 bg-white">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold gradient-text mb-4">What We Do</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We create unique experiences that bring the music community together through various engaging activities.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
+                <div class="hover-grow float-card card-shimmer rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="assets/whatwedo (3).jpg" alt="Performances" class="w-full h-full object-cover transition duration-500 hover:scale-105" style="object-position: center 30%;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-primary">PERFORMANCES</h3>
+                    </div>
+                </div>
+                
+                <div class="hover-grow float-card card-shimmer rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="assets/whatwedo (4).jpg" alt="Art Exhibits" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-primary">ART EXHIBITS</h3>
+                    </div>
+                </div>
+                
+                <div class="hover-grow float-card card-shimmer rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="assets/whatwedo (2).jpg" alt="Networking" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-primary">NETWORKING</h3>
+                    </div>
+                </div>
+                
+                <div class="hover-grow float-card card-shimmer rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="assets/whatwedo (1).jpg" alt="Artist Development" class="w-full h-full object-cover object-top transition duration-500 hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-primary">ARTIST DEVELOPMENT</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="event" class="py-20 relative" style="background-color: #5e17eb;">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgxNDIsIDY4LCAyMzUsIDAuMSkiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=')])">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row gap-12 reveal-left">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">The Event</h2>
+                    <p class="text-white mb-6">Cadence occurs 2-3 times a year, with the first event of 2025 on Monday, May 12th at Level 28. We rotate venues and artists for each event, showcasing new talent and unconventional locations around the city. The night will feature a wide variety of artists, with 2 Hip-Hop performances, a DJ, complimentary bites from a local chef, complimentary bites from a local pastry chef, an art exhibit featuring a Philly-based artist, a live visual artist, a bar menu created by 1 of Philadelphia's top bartenders highlighting the artists, and so much more.</p>
+                    <p class="text-white mb-8">We would additionally love to create swag bags for each person to go home with. We want these bags to include things that would tantalize the artistic mind, whether vinyl, resources, coupons, technology, or anything in between. If you cannot contribute financially but would be willing to explore this option, we would love to discuss it further!</p>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6 glow-text">Our Schedule</h2>
+                    
+                    <div class="relative pl-8 border-l-2 border-gray-200 space-y-8">
+                        <div class="relative">
+                            <div class="absolute -left-3 w-6 h-6 bg-white rounded-full border-4 border-primary"></div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <h3 class="font-heading font-bold text-xl text-primary mb-2">Event 01</h3>
+                                <p class="text-gray-600 mb-2">Monday, May 12th 6PM-10PM</p>
+                                <p class="text-gray-700">Our next Cadence in the Clouds will occur on Monday, May 12th at Level 28 in University City, Philadelphia.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative">
+                            <div class="absolute -left-3 w-6 h-6 bg-gray-200 rounded-full border-4 border-gray-400"></div>
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h3 class="font-heading font-bold text-xl text-gray-600 mb-2">Upcoming</h3>
+                                <p class="text-gray-500 mb-2">December</p>
+                                <p class="text-gray-600">Our events will run 2-3 times a year. The next events will be taking place on a Monday in December.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsor Packages Section -->
+    <section id="sponsors" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-heading font-bold gradient-text mb-4">Sponsor Packages</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Join us as a sponsor and align your brand with this premier music networking event.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-700 p-6 text-center">
+                        <h3 class="text-2xl font-heading font-bold text-white mb-2">BRONZE TIER</h3>
+                        <div class="bg-white text-purple-600 px-4 py-2 rounded-full text-2xl font-bold inline-block">
+                            $500
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Logo Placement:</strong> Your company logo featured on event promotional materials</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Social Media Shoutout:</strong> A dedicated post on our social media platforms</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Vendor Table:</strong> A designated table at the event to showcase your brand</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Social Media Video Feature:</strong> Your brand included in behind-the-scenes video</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">Contributing to the swag bag for each attendee (optional)</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="block w-full text-center bg-purple-600 text-white py-3 rounded-xl font-medium hover:bg-purple-700 transition duration-300">BECOME A SPONSOR</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-700 p-6 text-center">
+                        <h3 class="text-2xl font-heading font-bold text-white mb-2">SILVER TIER</h3>
+                        <div class="bg-white text-purple-600 px-4 py-2 rounded-full text-2xl font-bold inline-block">
+                            $1,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>All Bronze Tier Perks</strong></span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Enhanced Logo Placement:</strong> Larger logo placement on event materials and stage banners</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Event Announcement:</strong> Verbal acknowledgment during the event</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Social Media Takeover:</strong> Opportunity to provide content for our social media platforms</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Exclusive Access:</strong> Two complementary tickets to the event</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="block w-full text-center bg-purple-600 text-white py-3 rounded-xl font-medium hover:bg-purple-700 transition duration-300">BECOME A SPONSOR</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-700 p-6 text-center">
+                        <h3 class="text-2xl font-heading font-bold text-white mb-2">GOLD TIER</h3>
+                        <div class="bg-white text-purple-600 px-4 py-2 rounded-full text-2xl font-bold inline-block">
+                            $1,500
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>All Silver Tier Perks</strong></span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Prime Logo Placement:</strong> Top-tier logo placement on all event materials</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>On-Stage Recognition:</strong> A dedicated moment during the event to highlight your brand</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Booth Space:</strong> A premium booth space in a high-traffic area</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Custom Social Media Campaign:</strong> A tailored social media campaign (3 posts)</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Exclusive Access:</strong> Four VIP tickets with formal artist introductions</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="block w-full text-center bg-purple-600 text-white py-3 rounded-xl font-medium hover:bg-purple-700 transition duration-300">BECOME A SPONSOR</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-700 p-6 text-center">
+                        <h3 class="text-2xl font-heading font-bold text-white mb-2">PLATINUM TIER</h3>
+                        <div class="bg-white text-purple-600 px-4 py-2 rounded-full text-2xl font-bold inline-block">
+                            $2,000
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>All Gold Tier Perks</strong></span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Title Sponsorship:</strong> Your brand name featured as the title sponsor of the event</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Keynote Opportunity:</strong> A 5-minute speaking slot during the event</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Dedicated Email Blast:</strong> Your brand featured in a pre-event email blast</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
+                                    <i data-feather="check" class="w-5 h-3 text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700"><strong>Exclusive Access:</strong> Six VIP tickets with meet-and-greet opportunities</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="block w-full text-center bg-purple-600 text-white py-3 rounded-xl font-medium hover:bg-purple-700 transition duration-300">BECOME A SPONSOR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative" style="background-color: #5e17eb;">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgxNDIsIDY4LCAyMzUsIDAuMSkiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=')])">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6 glow-text">Get In Touch</h2>
+                <p class="text-white mb-8">Have questions about the event or interested in sponsorship opportunities? Reach out to us—we'd love to hear from you!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Phone Card -->
+                <a href="tel:240-449-9104" class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-opacity-20 transition duration-300 cursor-pointer block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="phone" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-white mb-4">Phone</h3>
+                    <span class="text-white hover:text-accent transition duration-300 text-lg">240-449-9104</span>
+                </a>
+                
+                <!-- Email Card -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Shaana@cadenceintheclouds.com&su=Sponsor%20Package%20Inquiry%20-%20Cadence%20in%20the%20Clouds" target="_blank" class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-opacity-20 transition duration-300 cursor-pointer block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="mail" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-white mb-4">Email</h3>
+                    <span class="text-white hover:text-accent transition duration-300 text-lg break-all">Shaana@cadenceintheclouds.com</span>
+                </a>
+                
+                <!-- Website Card -->
+                <a href="https://spicedbeats.com/spiced-sessions/" target="_blank" class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-opacity-20 transition duration-300 cursor-pointer block" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="globe" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-white mb-4">Website</h3>
+                    <span class="text-white hover:text-accent transition duration-300 text-lg break-all">Spicedbeats.com/spiced-sessions/</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-20 md:gap-60">
+                <!-- Logo Section -->
+                <div class="flex-shrink-0">
+                    <img src="assets/logo.PNG" alt="Cadence in the Clouds Logo" class="h-48 w-auto">
+                </div>
+                
+                <!-- Quick Links Section -->
+                <div class="">
+                    <h3 class="font-heading font-bold text-white mb-3 text-center md:text-left">Quick Links</h3>
+                    <div class="flex flex-col space-y-1 text-center md:text-left">
+                        <a href="#home" class="text-gray-400 hover:text-white transition duration-300">HOME</a>
+                        <a href="#about" class="text-gray-400 hover:text-white transition duration-300">ABOUT</a>
+                        <a href="#vision" class="text-gray-400 hover:text-white transition duration-300">VISION & MISSION</a>
+                        <a href="#what-we-do" class="text-gray-400 hover:text-white transition duration-300">WHAT WE DO</a>
+                        <a href="#event" class="text-gray-400 hover:text-white transition duration-300">EVENT</a>
+                        <a href="#sponsors" class="text-gray-400 hover:text-white transition duration-300">SPONSORSHIP</a>
+                        <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">CONTACT</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Icons Section -->
+                <div class="flex-shrink-0">
+                    <div class="flex space-x-6 justify-center">
+                        <!-- Phone -->
+                        <a href="tel:240-449-9104" class="text-gray-400 hover:text-white transition duration-300 flex flex-col items-center group">
+                            <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mb-2 group-hover:bg-gray-700 transition duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <span class="text-xs">Phone</span>
+                        </a>
+                        
+                        <!-- Email -->
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Shaana@cadenceintheclouds.com&su=Sponsor%20Package%20Inquiry%20-%20Cadence%20in%20the%20Clouds" target="_blank" class="text-gray-400 hover:text-white transition duration-300 flex flex-col items-center group">
+                            <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mb-2 group-hover:bg-gray-700 transition duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <span class="text-xs">Email</span>
+                        </a>
+                        
+                        <!-- Website -->
+                        <a href="https://spicedbeats.com/spiced-sessions/" target="_blank" class="text-gray-400 hover:text-white transition duration-300 flex flex-col items-center group">
+                            <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mb-2 group-hover:bg-gray-700 transition duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                            </div>
+                            <span class="text-xs">Website</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p class="mb-2">&copy; 2025 Cadence in the Clouds. All rights reserved.</p>
+                <p class="text-sm">
+                    Built by <a href="https://thefreewebsitewizards.com/?fbclid=PAZXh0bgNhZW0CMTEAAad0Jm-GNlXnPPJ1LVG1DBVBoUGdRHC5m3FFwUqGHjUfujAnDPDhsINN8mAv1A_aem_owWh2qpkEErFPYCqV9cPEg" target="_blank" class="text-purple-400 hover:text-purple-300 transition duration-300">The Free Website Wizards</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
