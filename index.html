@@ -44,6 +44,7 @@
                     <a href="#what-we-do" class="nav-link text-gray-700 hover:text-primary">What We Do</a>
                     <a href="#event" class="nav-link text-gray-700 hover:text-primary">Event</a>
                     <a href="#sponsors" class="nav-link text-gray-700 hover:text-primary">Sponsorship</a>
+                    <a href="#memories" class="nav-link text-gray-700 hover:text-primary">Gallery</a>
                     <a href="#contact" class="nav-link text-gray-700 hover:text-primary">Contact</a>
                 </div>
                 
@@ -62,6 +63,7 @@
                     <a href="#what-we-do" class="text-gray-700 hover:text-primary">What We Do</a>
                     <a href="#event" class="text-gray-700 hover:text-primary">Event</a>
                     <a href="#sponsors" class="text-gray-700 hover:text-primary">Sponsors</a>
+                    <a href="#memories" class="text-gray-700 hover:text-primary">Gallery</a>
                     <a href="#contact" class="text-gray-700 hover:text-primary">Contact</a>
                 </div>
             </div>
@@ -115,6 +117,7 @@
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#about" class="px-8 py-3 btn-magical text-white rounded-full font-medium transition-all duration-300">Learn More</a>
                 <a href="#sponsors" class="px-8 py-3 btn-magical text-white rounded-full font-medium transition-all duration-300">Sponsor Us</a>
+                <a href="https://cadenceintheclouds.spicedbeats.com/e/2138661010" target="_blank" class="px-8 py-3 btn-magical text-white rounded-full font-medium transition-all duration-300">Purchase Ticket</a>
             </div>
         </div>
     </section>
@@ -172,6 +175,50 @@
                             <p class="text-gray-700 text-sm lg:text-base leading-relaxed">
                                 Cadence in the Clouds strives to bring those resources into one room, celebrating every individual who puts their passion at the forefront of their career and dares to take risks rather than follow the paths of conventionality.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Cadence in the Clouds Section -->
+    <section id="meet-cadence" class="py-20 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold gradient-text mb-4">Meet Cadence in the Clouds</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">A music networking industry night above the clouds</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <div class="relative group cursor-pointer" id="promo-video-container">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25"></div>
+                    <div class="relative bg-white p-4 rounded-2xl shadow-2xl">
+                        <video 
+                            id="promo-video"
+                            class="w-full rounded-xl"
+                            muted
+                            autoplay
+                            loop
+                            playsinline
+                            style="max-height: 600px; object-fit: cover;"
+                        >
+                            <source src="assets/promo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                        <!-- Play/Pause Overlay -->
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                            <div class="bg-black bg-opacity-50 rounded-full p-4">
+                                <i data-feather="play" class="text-white w-8 h-8" id="play-icon"></i>
+                                <i data-feather="pause" class="text-white w-8 h-8 hidden" id="pause-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Volume Control -->
+                        <div class="absolute bottom-6 right-6 bg-black bg-opacity-50 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i data-feather="volume-x" class="text-white w-5 h-5" id="volume-off-icon"></i>
+                            <i data-feather="volume-2" class="text-white w-5 h-5 hidden" id="volume-on-icon"></i>
                         </div>
                     </div>
                 </div>
@@ -275,6 +322,52 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Experience Cadence in the Clouds Video Section -->
+            <div class="mt-20 text-center" data-aos="fade-up">
+                <h3 class="text-3xl md:text-4xl font-heading font-bold gradient-text mb-8">Experience Cadence in the Clouds</h3>
+                
+                <div class="max-w-4xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative group cursor-pointer" id="whatwedo-video-container">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25"></div>
+                        <div class="relative bg-white p-4 rounded-2xl shadow-2xl">
+                            <video 
+                                id="whatwedo-video"
+                                class="w-full rounded-xl"
+                                muted
+                                autoplay
+                                loop
+                                playsinline
+                                style="max-height: 600px; object-fit: cover;"
+                            >
+                                <source src="assets/whatwedo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <!-- Play/Pause Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                                <div class="bg-black bg-opacity-50 rounded-full p-4">
+                                    <i data-feather="play" class="text-white w-8 h-8" id="whatwedo-play-icon"></i>
+                                    <i data-feather="pause" class="text-white w-8 h-8 hidden" id="whatwedo-pause-icon"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Volume Control -->
+                            <div class="absolute bottom-6 right-6 bg-black bg-opacity-50 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i data-feather="volume-x" class="text-white w-5 h-5" id="whatwedo-volume-off-icon"></i>
+                                <i data-feather="volume-2" class="text-white w-5 h-5 hidden" id="whatwedo-volume-on-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Submit Your Music Button -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://spicedbeats.com/submissions-services/" target="_blank" class="inline-block px-8 py-4 btn-magical text-white rounded-full font-medium text-lg transition-all duration-300 hover:scale-105">
+                        Submit Your Music
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -286,8 +379,8 @@
             <div class="flex flex-col md:flex-row gap-12 reveal-left">
                 <div class="md:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">The Event</h2>
-                    <p class="text-white mb-6">Cadence occurs 2-3 times a year, with the first event of 2025 on Monday, May 12th at Level 28. We rotate venues and artists for each event, showcasing new talent and unconventional locations around the city. The night will feature a wide variety of artists, with 2 Hip-Hop performances, a DJ, complimentary bites from a local chef, complimentary bites from a local pastry chef, an art exhibit featuring a Philly-based artist, a live visual artist, a bar menu created by 1 of Philadelphia's top bartenders highlighting the artists, and so much more.</p>
-                    <p class="text-white mb-8">We would additionally love to create swag bags for each person to go home with. We want these bags to include things that would tantalize the artistic mind, whether vinyl, resources, coupons, technology, or anything in between. If you cannot contribute financially but would be willing to explore this option, we would love to discuss it further!</p>
+                    <p class="text-white mb-6">Cadence in the Clouds is to celebrate the dreamers. Artists around the city can come together to enjoy an industry night like no other. Tickets not only get access to see two phenomenal performances, but the opportunity to see DJ Bear-One spin, complimentary bites from a local chef, beautiful pastries, art installations, and so much more.</p>
+                    <p class="text-white mb-8">Check in with this page to grab a ticket to our next night in the clouds!</p>
                 </div>
                 
                 <div class="md:w-1/2">
@@ -300,6 +393,9 @@
                                 <h3 class="font-heading font-bold text-xl text-primary mb-2">Event 01</h3>
                                 <p class="text-gray-600 mb-2">Monday, May 12th 6PM-10PM</p>
                                 <p class="text-gray-700">Our next Cadence in the Clouds will occur on Monday, May 12th at Level 28 in University City, Philadelphia.</p>
+                                <a href="https://cadenceintheclouds.spicedbeats.com/e/2138661010" target="_blank" class="inline-block mt-[10px] px-6 py-3 btn-magical text-white rounded-full font-medium transition-all duration-300 hover:scale-105">
+                                    Purchase Ticket
+                                </a>
                             </div>
                         </div>
                         
@@ -511,6 +607,48 @@
         </div>
     </section>
 
+    <!-- In the Clouds: Event Memories Section -->
+    <section id="memories" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-heading font-bold gradient-text mb-4">In the Clouds: Event Memories</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Relive the magical moments from our past events through this collection of memories captured in the clouds.</p>
+            </div>
+            
+            <!-- Photo Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 stagger" id="photo-gallery">
+                <!-- Photos will be dynamically generated -->
+            </div>
+            
+            <!-- View More/Less Buttons -->
+            <div class="text-center mt-12" data-aos="fade-up">
+                <button id="view-more-btn" class="btn-magical bg-gradient-to-r from-primary to-accent text-white px-8 py-3 rounded-full font-semibold transition duration-300 hover:shadow-lg mr-4">
+                    View More
+                </button>
+                <button id="view-less-btn" class="btn-magical bg-gradient-to-r from-gray-500 to-gray-600 text-white px-8 py-3 rounded-full font-semibold transition duration-300 hover:shadow-lg" style="display: none;">
+                     View Less
+                 </button>
+             </div>
+            </div>
+        </div>
+        
+        <!-- Photo Modal -->
+        <div id="photo-modal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+            <div class="relative max-w-4xl max-h-full">
+                <button id="close-modal" class="absolute top-2 right-6 text-white text-2xl bg-black bg-opacity-50 rounded-full w-8 h-8 flex items-center justify-center">
+                    <i data-feather="x"></i>
+                </button>
+                <button id="prev-photo" class="absolute left-2 top-1/2 transform -translate-y-1/2 text-white text-2xl bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center">
+                    <i data-feather="chevron-left"></i>
+                </button>
+                <button id="next-photo" class="absolute right-6 top-1/2 transform -translate-y-1/2 text-white text-2xl bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center">
+                    <i data-feather="chevron-right"></i>
+                </button>
+                <img id="modal-image" src="" alt="Event Memory" class="max-w-full max-h-full object-contain rounded-lg">
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 relative" style="background-color: #5e17eb;">
         <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgxNDIsIDY4LCAyMzUsIDAuMSkiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=')])">
@@ -541,12 +679,12 @@
                 </a>
                 
                 <!-- Website Card -->
-                <a href="https://spicedbeats.com/spiced-sessions/" target="_blank" class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-opacity-20 transition duration-300 cursor-pointer block" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://spicedbeats.com/" target="_blank" class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-opacity-20 transition duration-300 cursor-pointer block" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i data-feather="globe" class="w-8 h-8 text-white"></i>
                     </div>
                     <h3 class="text-xl font-heading font-bold text-white mb-4">Website</h3>
-                    <span class="text-white hover:text-accent transition duration-300 text-lg break-all">Spicedbeats.com/spiced-sessions/</span>
+                    <span class="text-white hover:text-accent transition duration-300 text-lg break-all">Spicedbeats.com</span>
                 </a>
             </div>
         </div>
@@ -571,6 +709,7 @@
                         <a href="#what-we-do" class="text-gray-400 hover:text-white transition duration-300">WHAT WE DO</a>
                         <a href="#event" class="text-gray-400 hover:text-white transition duration-300">EVENT</a>
                         <a href="#sponsors" class="text-gray-400 hover:text-white transition duration-300">SPONSORSHIP</a>
+                        <a href="#memories" class="text-gray-400 hover:text-white transition duration-300">GALLERY</a>
                         <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">CONTACT</a>
                     </div>
                 </div>
